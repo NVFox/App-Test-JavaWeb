@@ -96,6 +96,7 @@ section ul > li > input {
 
 .btn-submit {
     padding: 2em 0;
+    margin-bottom: 2rem;
 }
 
 .btn-submit p {

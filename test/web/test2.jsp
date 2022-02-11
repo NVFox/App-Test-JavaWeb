@@ -4,6 +4,7 @@
     Author     : usuario
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page import="javax.swing.JOptionPane"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,7 +31,7 @@
                 <article>
                     <form>
                         <section>
-                            <h3>1. Pregunta Uno</h3>
+                            <h3>5. Pregunta Cinco</h3>
                             <ul>
                                 <li>
                                     <label for="unoa">Opción a</label>
@@ -51,7 +52,7 @@
                             </ul>
                         </section>
                         <section>
-                            <h3>2. Pregunta Dos</h3>
+                            <h3>6. Pregunta Seis</h3>
                             <ul>
                                 <li>
                                     <label for="dosa">Opción a</label>
@@ -72,7 +73,7 @@
                             </ul>
                         </section>
                         <section>
-                            <h3>3. Pregunta Tres</h3>
+                            <h3>7. Pregunta Siete</h3>
                             <ul>
                                 <li>
                                     <label for="tresa">Opción Correcta</label>
@@ -93,7 +94,7 @@
                             </ul>
                         </section>
                         <section>
-                            <h3>4. Pregunta Cuatro</h3>
+                            <h3>8. Pregunta Ocho</h3>
                             <ul>
                                 <li>
                                     <label for="cuatroa">Opción a</label>
@@ -122,16 +123,34 @@
                         HttpSession sesion = request.getSession();
                         
                         if (request.getParameter("btn") != null) {
-                        
-                            String[] values = request.getParameterValues("correcta");
+                            String[] oldValues = (String[]) sesion.getAttribute("correctas");
+                            String[] newValues = request.getParameterValues("correcta");
                             
-                            if (values != null && values.length > 0) {
-                                sesion.setAttribute("correctas", values);
-                            } else {
-                                sesion.setAttribute("correctas", new String[0]);
+                            if (newValues == null) {
+                                newValues = new String[0];
                             }
                             
-                            response.sendRedirect("test2.jsp");
+                            int valuesLength = oldValues.length + newValues.length;
+                            
+                            String[] totalValues = new String[valuesLength];
+                            
+                            int indexTotal = 0;
+                            
+                            for (int i = 0; i < oldValues.length; i++) {
+                                totalValues[indexTotal] = oldValues[i];
+                                indexTotal++;
+                            }
+                            
+                            for (int i = 0; i < newValues.length; i++) {
+                                totalValues[indexTotal] = newValues[i];
+                                indexTotal++;
+                            }
+                            
+                            if (newValues != null && newValues.length > 0) {
+                                sesion.setAttribute("correctas", totalValues);
+                            }
+                            
+                            response.sendRedirect("test3.jsp");
                         }
                     %>
                 </article>

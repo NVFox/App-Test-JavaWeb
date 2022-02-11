@@ -41,8 +41,8 @@
                                     <input type="checkbox" id="unob" name="b">
                                 </li>
                                 <li>
-                                    <label for="unoc">Opción c</label>
-                                    <input type="checkbox" id="unoc" name="c">
+                                    <label for="unoc">Opción Correcta</label>
+                                    <input type="checkbox" id="unoc" name="correcta" value="c-0">
                                 </li>
                                 <li>
                                     <label for="unod">Opción d</label>
@@ -66,8 +66,8 @@
                                     <input type="checkbox" id="dosc" name="c">
                                 </li>
                                 <li>
-                                    <label for="dosd">Opción d</label>
-                                    <input type="checkbox" id="dosd" name="d">
+                                    <label for="dosd">Opción Correcta</label>
+                                    <input type="checkbox" id="dosd" name="correcta" value="c-1">
                                 </li>
                             </ul>
                         </section>
@@ -75,12 +75,12 @@
                             <h3>3. Pregunta Tres</h3>
                             <ul>
                                 <li>
-                                    <label for="tresa">Opción a</label>
-                                    <input type="checkbox" name="correcta" value="c-0">
+                                    <label for="tresa">Opción Correcta</label>
+                                    <input type="checkbox" id="tresa" name="correcta" value="c-2">
                                 </li>
                                 <li>
                                     <label for="tresb">Opción b</label>
-                                    <input type="checkbox" name="correcta" value="c-1">
+                                    <input type="checkbox" id="tresb" name="b">
                                 </li>
                                 <li>
                                     <label for="tresc">Opción c</label>
@@ -100,8 +100,8 @@
                                     <input type="checkbox" id="cuatroa" name="a">
                                 </li>
                                 <li>
-                                    <label for="cuatrob">Opción b</label>
-                                    <input type="checkbox" id="cuatrob" name="b">
+                                    <label for="cuatrob">Opcion Correcta</label>
+                                    <input type="checkbox" id="cuatrob" name="correcta" value="c-3">
                                 </li>
                                 <li>
                                     <label for="cuatroc">Opción c</label>
@@ -127,9 +127,11 @@
                             
                             if (values != null && values.length > 0) {
                                 sesion.setAttribute("correctas", values);
+                            } else {
+                                sesion.setAttribute("correctas", new String[0]);
                             }
                             
-                            response.sendRedirect("resultados.jsp");
+                            response.sendRedirect("test2.jsp");
                         }
                     %>
                 </article>

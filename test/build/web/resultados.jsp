@@ -21,11 +21,7 @@
             HttpSession sesion = request.getSession();
             String[] correctas = (String[]) sesion.getAttribute("correctas");
 
-            if (correctas == null) {
-                correctas = new String[0];
-            }
-
-            int totalPreguntas = 2;
+            int totalPreguntas = 12;
             float porcentajeTotal = (float) correctas.length / totalPreguntas;
         %>
         <main>
