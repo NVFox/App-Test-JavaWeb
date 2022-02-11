@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/02/2022, 11:05:38 p. m.
+    Author     : usuario
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("imagen-index.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body > div.full-content {
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.65);
+    margin-bottom: 30px;
+}
+
+nav {
+    padding: 15px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li {
+    padding: 15px;
+    color: white;
+    margin: auto 0;
+    margin-left: 15px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li > h2 {
+    font-size: 1.5rem;
+}
+
+article > form {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    background: white;
+    margin: 10px 0;
+    padding: 3rem 0;
+    width: 60%;
+    box-shadow: 0px 3px 0.3pc gray;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section > h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+section ul > li {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+section ul > li > input {
+    margin-right: 15px;
+}
+
+.btn-submit {
+    padding: 2em 0;
+}
+
+.btn-submit p {
+    font-size: .8rem;
+    width: 80%;
+    margin: auto
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 0 1rem 0;
+    font-size: 1.05rem;
+    background: orange;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 0.2pc black;
+}
+
+input[type="submit"]:hover {
+    background: rgb(255, 185, 0);
+    transition: all 300ms;
+}
