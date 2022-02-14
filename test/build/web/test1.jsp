@@ -34,19 +34,19 @@
                             <ul>
                                 <li>
                                     <label for="unoa">Opción a</label>
-                                    <input type="checkbox" id="unoa" name="a">
+                                    <input type="checkbox" id="unoa" name="a" class="p1">
                                 </li>
                                 <li>
                                     <label for="unob">Opción b</label>
-                                    <input type="checkbox" id="unob" name="b">
+                                    <input type="checkbox" id="unob" name="b" class="p1">
                                 </li>
                                 <li>
                                     <label for="unoc">Opción Correcta</label>
-                                    <input type="checkbox" id="unoc" name="correcta" value="c-0">
+                                    <input type="checkbox" id="unoc" name="correcta" value="c-0" class="p1">
                                 </li>
                                 <li>
                                     <label for="unod">Opción d</label>
-                                    <input type="checkbox" id="unod" name="d">
+                                    <input type="checkbox" id="unod" name="d" class="p1">
                                 </li>
                             </ul>
                         </section>
@@ -55,19 +55,19 @@
                             <ul>
                                 <li>
                                     <label for="dosa">Opción a</label>
-                                    <input type="checkbox" id="dosa" name="a">
+                                    <input type="checkbox" id="dosa" name="a" class="p2">
                                 </li>
                                 <li>
                                     <label for="dosb">Opción b</label>
-                                    <input type="checkbox" id="dosb" name="b">
+                                    <input type="checkbox" id="dosb" name="b" class="p2">
                                 </li>
                                 <li>
                                     <label for="dosc">Opción c</label>
-                                    <input type="checkbox" id="dosc" name="c">
+                                    <input type="checkbox" id="dosc" name="c" class="p2">
                                 </li>
                                 <li>
                                     <label for="dosd">Opción Correcta</label>
-                                    <input type="checkbox" id="dosd" name="correcta" value="c-1">
+                                    <input type="checkbox" id="dosd" name="correcta" value="c-1" class="p2">
                                 </li>
                             </ul>
                         </section>
@@ -76,19 +76,19 @@
                             <ul>
                                 <li>
                                     <label for="tresa">Opción Correcta</label>
-                                    <input type="checkbox" id="tresa" name="correcta" value="c-2">
+                                    <input type="checkbox" id="tresa" name="correcta" value="c-2" class="p3">
                                 </li>
                                 <li>
                                     <label for="tresb">Opción b</label>
-                                    <input type="checkbox" id="tresb" name="b">
+                                    <input type="checkbox" id="tresb" name="b" class="p3">
                                 </li>
                                 <li>
                                     <label for="tresc">Opción c</label>
-                                    <input type="checkbox" id="tresc" name="c">
+                                    <input type="checkbox" id="tresc" name="c" class="p3">
                                 </li>
                                 <li>
                                     <label for="tresd">Opción d</label>
-                                    <input type="checkbox" id="tresd" name="d">
+                                    <input type="checkbox" id="tresd" name="d" class="p3">
                                 </li>
                             </ul>
                         </section>
@@ -97,19 +97,19 @@
                             <ul>
                                 <li>
                                     <label for="cuatroa">Opción a</label>
-                                    <input type="checkbox" id="cuatroa" name="a">
+                                    <input type="checkbox" id="cuatroa" name="a" class="p4">
                                 </li>
                                 <li>
                                     <label for="cuatrob">Opcion Correcta</label>
-                                    <input type="checkbox" id="cuatrob" name="correcta" value="c-3">
+                                    <input type="checkbox" id="cuatrob" name="correcta" value="c-3" class="p4">
                                 </li>
                                 <li>
                                     <label for="cuatroc">Opción c</label>
-                                    <input type="checkbox" id="cuatroc" name="c">
+                                    <input type="checkbox" id="cuatroc" name="c" class="p4">
                                 </li>
                                 <li>
                                     <label for="cuatrod">Opción d</label>
-                                    <input type="checkbox" id="cuatrod" name="d">
+                                    <input type="checkbox" id="cuatrod" name="d" class="p4">
                                 </li>
                             </ul>
                         </section>
@@ -137,5 +137,6 @@
                 </article>
             </main>
         </div>
+        <script src="valueChanger.js"></script>
     </body>
 </html>
